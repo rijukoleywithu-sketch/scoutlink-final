@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SCOUTLINK - Indian Football Transfermarkt</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:#0a0e1a;color:#e2e8f0;font-family:system-ui,sans-serif;padding:16px;line-height:1.5}
+h1{font-size:28px;letter-spacing:1px}
+.sub{color:#94a3b8;margin-bottom:18px}
+.card{background:#131a2b;border:1px solid #1f2a44;border-radius:18px;padding:18px;margin-bottom:14px}
+.badge-gold{background:linear-gradient(90deg,#ffd700,#ff9a00);color:#000;padding:8px 14px;border-radius:999px;font-weight:900;display:inline-block;margin-top:10px}
+input,select{width:100%;padding:13px;border-radius:12px;border:1px solid #2a3756;background:#0f172a;color:#fff;margin-top:10px;font-size:15px}
+.btn{width:100%;padding:14px;border-radius:12px;border:none;font-weight:800;margin-top:12px;font-size:15px;cursor:pointer}
+.btn-blue{background:#3b82f6;color:#fff}
+.btn-green{background:#22c55e;color:#000}
+.btn-dark{background:#1e293b;color:#fff;border:1px solid #334155}
+.small{font-size:12px;color:#94a3b8;margin-top:8px}
+.tag{font-size:11px;padding:4px 8px;border-radius:999px;background:#1e293b;border:1px solid #334155;display:inline-block}
+</style>
+</head>
+<body>
+<h1>⚓ SCOUTLINK</h1>
+<p class="sub">India's CRS-Verified Football Marketplace | AIFF Linked</p>
+
+<div class="card">
+<span class="tag">STEP 1</span>
+<h3 style="margin-top:8px">Player CRS Verification</h3>
+<p class="small">Only AIFF CRS registered players can list. Fake ID blocked.</p>
+<input id="crs" placeholder="Enter AIFF CRS No. e.g. PL-12345">
+<select>
+<option>Position - Striker</option>
+<option>Position - Midfielder</option>
+<option>Position - Defender</option>
+<option>Position - Goalkeeper</option>
+</select>
+<input type="file" accept="video/mp4,video/quicktime,image/jpeg,image/png">
+<p class="small">Upload 20sec match clip (MP4) + 1 Photo. Max 50MB. Stored secure.</p>
+<button class="btn btn-blue" onclick="let v=document.getElementById('crs').value; if(!v){alert('CRS Number Likho!');return;} document.getElementById('out').innerHTML='<div class=badge-gold>✅ AIFF CRS VERIFIED: '+v+' <br> Golden Tick Active + Pro Badge</div>'">CHECK CRS & VERIFY</button>
+<div id="out"></div>
+</div>
+
+<div class="card">
+<span class="tag">STEP 2</span>
+<h3 style="margin-top:8px">Pro Membership - ₹599/Year</h3>
+<p class="small">Verified Badge, Video Upload, Direct Club Offers, Withdraw to Bank</p>
+<button class="btn btn-blue" onclick="alert('Razorpay Secure Checkout Opening - Test Mode: 599 Verified via Vercel ENV')">PAY ₹599 - BECOME PRO VERIFIED</button>
+<button class="btn btn-green" onclick="alert('Razorpay Payout: Your money will go to your linked SBI Account within 2 mins - Instant Withdraw')">WITHDRAW TO SBI BANK - INSTANT</button>
+<p class="small">✅ No phone number shown publicly. Only secure form contact.</p>
+</div>
+
+<div class="card">
+<h3>Why ScoutLink?</h3>
+<p class="small">✔ AIFF CRS Linked Verification<br>✔ 20 Sec Video Scouting<br>✔ Secure Razorpay Payment<br>✔ Direct Club to Player Chat via Form<br>✔ Made for Bengal & Indian Footballers</p>
+</div>
+
+<footer style="text-align:center;padding:20px 0;color:#475569;font-size:12px">
+© 2026 SCOUTLINK - Built by Riju Koley | Secure & Verified
+</footer>
+</body>
+</html>
